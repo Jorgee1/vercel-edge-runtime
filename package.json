@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --outdir=public --sourcemap",
-    "dev": "pnpm build && edge-runtime --listen ./public/index.js --port 3000",
+    "build": "esbuild src/index.ts --bundle --outdir=api --sourcemap",
+    "dev": "pnpm build && edge-runtime --listen ./api/index.js --port 3000",
     "test-dev": "start-server-and-test 'pnpm dev' http://127.0.0.1:3000 'tsx src/client.ts'"
   },
   "dependencies": {
